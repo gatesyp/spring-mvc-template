@@ -3,8 +3,13 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-	<bean id="customerDAO" class="com.pwm.JdbcUserDAO">
+	<bean id="userDAO" class="hello.JdbcUserDAO">
 		<property name="dataSource" ref="dataSource" />
 	</bean>
+<!-- 	<bean id="userDAO" class="hello.UserDAO">
+		<property name="userDAO" ref="userDao" />
+	</bean>
+	 -->
+	
 
 </beans>
