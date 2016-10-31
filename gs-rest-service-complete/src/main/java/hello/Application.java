@@ -15,15 +15,5 @@ public class Application {
     	ApplicationContext context =
         		new ClassPathXmlApplicationContext("Spring-Module.xml");
         SpringApplication.run(Application.class, args);
-
-        UserDAO userDAO = (UserDAO) context.getBean("userDAO");
-//      System.out.println(context.getBean("userDAO"));
-//userDAO.insert(user);
-
-//User user1 = userDAO.findByUserId(1);
-//      System.out.println(user1);
-
-
-
     }
 }
